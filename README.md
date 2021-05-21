@@ -1,0 +1,1 @@
+pip install .\extras\opentoken-python-master.zip
