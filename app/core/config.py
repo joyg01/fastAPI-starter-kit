@@ -1,10 +1,17 @@
 from pydantic import BaseSettings
+import os
 
 class Settings(BaseSettings):
+
+    API_SERVER_URL:str = os.environ.get("API_SERVER_URL", "http://localhost")
+    API_SERVER_PORT:str = os.environ.get("API_SERVER_PORT", "5678")
+
     API_PREFIX: str = "/api"
     PROJECT_NAME: str = "Default App"
     PROJECT_VERSION: str = "0.1.0"
     API_V1_STR: str = f"{API_PREFIX}/v1"
+    API_USER_PREFIX: str = "/user"
+    API_ADMIN_PREFIX: str = "/admin"
 
     # DOCUMENTATIONS
     DOCUMENTATION: str = f"{API_PREFIX}/docs"
