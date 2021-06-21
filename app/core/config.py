@@ -5,6 +5,9 @@ class Settings(BaseSettings):
 
     API_SERVER_URL:str = os.environ.get("API_SERVER_URL", "http://localhost")
     API_SERVER_PORT:str = os.environ.get("API_SERVER_PORT", "5678")
+    OAUTH_VALIDATE_URL:str = os.environ.get("OAUTH_VALIDATE_URL", "https://devfederate.pfizer.com/as/token.oauth2")
+    OAUTH_CLIENT_ID:str = os.environ.get("OAUTH_CLIENT_ID", "None")
+    OAUTH_CLIENT_SECRET:str = os.environ.get("OAUTH_CLIENT_SECRET", "None")
 
     API_PREFIX: str = "/api"
     PROJECT_NAME: str = "Default App"
