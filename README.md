@@ -5,7 +5,7 @@ pip install .\extras\opentoken-python-master.zip
 - FastAPI
 - Pytest
 - Dockerfile
-- OpenToken decode (custom for pfizer SSO)
+- OAuth2
 - User routes with authorization
 - Admin routes with authorization
 
@@ -14,7 +14,6 @@ pip install .\extras\opentoken-python-master.zip
 #### Usage
 ```
 pip install -r requirements
-pip install .\extras\opentoken-python-master.zip
 ```
 Set ENV variables
 ```
